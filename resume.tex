@@ -1,0 +1,204 @@
+%-------------------------
+% Resume in Latex
+% Author : Sidratul Muntaha Ahmed
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    \textbf{\Huge \scshape Daniel J Barton} \\ \vspace{1pt}
+    \small (+1) 763-333-6834 $|$ \href{mailto:Daniel.Barton446@gmail.com}{\underline{Daniel.Barton446@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/daniel-barton-36a360204/}{\underline{linkedin.com/Daniel-Barton}} $|$
+    \href{https://github.com/DanielBarton446}{\underline{github.com/DanielBarton446}}
+\end{center}
+
+%------OBJECTIVE STATEMENT------
+\section{Objective}
+Striving to automate and streamline inter-system tasks perceived be isolated and independent. Connecting what was once thought to be separate.
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Reliability Engineer}{May 2022 --- Current}
+      {Bestbuy}{Richfield, Minnesota}
+      \resumeItemListStart
+        \resumeItem{Maintained and enhanced observability tooling: Splunk, Elastic, Grafana, Graphite }
+        \resumeItem{Frequently worked with Terraform, Chef, and Ansible to provision and configure AWS infrastructure}
+        \resumeItem{Automated snapshot cleanup for Grafana, alongside building an improved restoration mechanism for dashboards}
+        \resumeItem{Lead the migration task for authentication from crowd over to AD through SAML for Splunk}
+        \resumeItem{Implemented automation for ``index'' creation. This enabled app teams to not be reliant on the regular 2 week deployment cycle where they would need to create a ticket to be added to the queue of new indexes}
+        \resumeItem{Rearchitected log backup mechanism(for resiliency) for tens of thousands of dollars in yearly cost savings}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Quality Intern at Boston Scientific}{June 2021 --- September 2021}
+      {Boston Scientific}{Arden Hills, Minnesota}
+      \resumeItemListStart
+        \resumeItem{Self-led the design and implementation to streamline diagnostics of Latitude Communicators. Circa 80\% of communicators returned were able to be automatically diagnosed through this new implementation. Estimated time saved from technicians of 20\%, or roughly 8 hours per week. Time saved enabled technicians to apply more time to more critical products like pulse generators}
+        \resumeItem{Utilized Tera-Term macro programming language to directly interact with Latitude Communicator micro-processors for streamlining diagnostics}
+        \resumeItem{Finished development a month ahead of schedule, spending the remaining time to manually validate and create thorough documentation regarding the new testing product} 
+        \resumeItem{Communicated with lead engineers on ensuring depth of testing and test run time to assemble an advantageous testing tool. Interacted directly with technicians to ascertain desired testing}
+      \resumeItemListEnd
+     
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Minnesota}{Minneapolis, Minnesota}
+      {Bachelor of Computer Science}{May 2022}
+          \resumeItemListStart
+            \resumeItem{GPA: 3.38}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{[Python] Optical Digit Classifier Neural Network} $|$ \emph{Numpy}}{November 2021}
+          \resumeItemListStart
+            \resumeItem{Built a multi layer perceptron to recognize pre-processed images of handwritten numbers. Determined ideal number of hidden units within the hidden layer for optimal recognition accuracy and run-time. Test accuracy was 93\%.  2D and 3D visualization using the hidden units with the largest variance to show the distribution of classifications.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{[C] Basic Chatroom} $|$ \emph{Pthread}}{April 2021}
+          \resumeItemListStart
+            \resumeItem{Local server-client relationship from scratch allowing for chatting utilizing FIFO’s. Extendable to sockets and over-the-network chatting. Utilized elementary multi-threading, and taught elementary concepts of networking.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{[C++] Voting System Simluation} $|$ \emph{doxygen}}{April 2022}
+          \resumeItemListStart
+            \resumeItem{School team project that acted as a demonstration of waterfall and agile scrum work methodologies}
+            \resumeItem{Created central waterfall documents, SRS and SDD}
+            \resumeItem{Simulated user stories with arbitrary feature requests to be implemented within 72 hours on an existing codebase}
+            \resumeItem{Leveraged several OOP patterns(e.g. builder, observer) to follow SOLID principles, and enable adaptability/modularity}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:}{ Python, C, C++, Rust, MySQL, Node.js, JavaScript, HTML, CSS} \\
+     \textbf{Technologies:}{ AWS, Openshift, Terraform, Chef, Ansible} \\
+     \textbf{Certifications:}{ Backend Development and API -- FreeCodeCamp} \\
+     \textbf{Developer Tools:}{ Git, Ansible } \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
