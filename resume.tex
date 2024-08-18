@@ -39,11 +39,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\oddsidemargin}{ -0.5in}
+\addtolength{\evensidemargin}{ -0.5in}
+\addtolength{\textwidth}{ 1in}
+\addtolength{\topmargin}{ -.5in}
+\addtolength{\textheight}{ 1.0in}
 
 \urlstyle{same}
 
@@ -116,32 +116,42 @@
 
 %------OBJECTIVE STATEMENT------
 \section{Objective}
-Striving to automate and streamline inter-system tasks perceived be isolated and independent. Connecting what was once thought to be separate.
+Seeking to leverage concepts from the SOLID principle to operational observability and automation systems.
+Maintainability and extensibility are often sacrificed to yield quick results. I prioritize sustainable solutions.
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Reliability Engineer}{May 2022 --- Current}
-      {Bestbuy}{Richfield, Minnesota}
+      {Reliability Engineer -- Observability}{ May 2022 --- November 2023}
+      {Bestbuy}{ Richfield, Minnesota}
       \resumeItemListStart
-        \resumeItem{Maintained and enhanced observability tooling: Splunk, Elastic, Grafana, Graphite }
+        \resumeItem{Maintained and enhanced observability tooling: Splunk, Elastic, Grafana, Graphite}
         \resumeItem{Frequently worked with Terraform, Chef, and Ansible to provision and configure AWS infrastructure}
         \resumeItem{Automated snapshot cleanup for Grafana, alongside building an improved restoration mechanism for dashboards}
-        \resumeItem{Lead the migration task for authentication from crowd over to AD through SAML for Splunk}
-        \resumeItem{Implemented automation for index creation. This enabled app teams to not be reliant on the regular 2 week deployment cycle where they would need to create a ticket to be added to the queue of new indexes}
-        \resumeItem{Rearchitected log backup mechanism(for resiliency) for tens of thousands of dollars in yearly cost savings}
+        \resumeItem{Lead the migration task for authentication from crowd auth over to AD through SAML for Splunk}
+        \resumeItem{Implemented automation for Splunk index creation. This enabled app teams to not be reliant on the regular 2-week deployment cycle where they would need to create a ticket to be added to the queue of new indexes}
+        \resumeItem{Re-architect log file backup mechanism (for resiliency) for tens of thousands of dollars in yearly cost savings}
       \resumeItemListEnd
 
     \resumeSubheading
+      {Support Engineer -- Metadata Frameworks}{ November 2023 -- Present}
+      {Susquehanna International Group}{ Bala Cynwyd, Pennsylvania}
+    \resumeItemListStart
+      \resumeItem{ Lead a major migration task for on-prem infrastructure for minimized impacts on trading operations for the Firm}
+      \resumeItem{ Improved several manual operational tasks with automation where allowed, and through data representation otherwise. One particular case cut down a low priority daily task from hours to minutes. }
+      \resumeItem{ Implemented automatic token bundling for application deployment with our in-house deployment tooling}
+      \resumeItem{ Implemented multiple python-based monitoring additions. One gap was alerting on silently failing ELK watchers}
+    \resumeItemListEnd
+
+    \resumeSubheading
       {Quality Intern at Boston Scientific}{June 2021 --- September 2021}
-      {Boston Scientific}{Arden Hills, Minnesota}
+      {Boston Scientific}{ Arden Hills, Minnesota}
       \resumeItemListStart
-        \resumeItem{Self-led the design and implementation to streamline diagnostics of Latitude Communicators. Circa 80\% of communicators returned were able to be automatically diagnosed through this new implementation. Estimated time saved from technicians of 20\%, or roughly 8 hours per week.}
-        \resumeItem{Utilized Tera-Term macro programming language to directly interact with Latitude Communicator micro-processors for streamlining diagnostics}
+        \resumeItem{Self-led the design and implementation to streamline diagnostics of Latitude Communicators. Circa 80\% of communicators returned were targetable for this product. This saved around 8 hours a week for technicians}
+        \resumeItem{Utilized Tera-Term macro programming language to implement automated testing}
         \resumeItem{Finished development a month ahead of schedule, spending the remaining time to manually validate and create thorough documentation regarding the new testing product} 
-        \resumeItem{Communicated with lead engineers on ensuring depth of testing and test run time to assemble an advantageous testing tool. Interacted directly with technicians to ascertain desired testing}
       \resumeItemListEnd
      
     \resumeSubHeadingListEnd
@@ -150,8 +160,8 @@ Striving to automate and streamline inter-system tasks perceived be isolated and
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of Minnesota}{Minneapolis, Minnesota}
-      {Bachelor of Computer Science}{May 2022}
+      {University of Minnesota}{ Minneapolis, Minnesota}
+      {Bachelor of Computer Science}{ May 2022}
           \resumeItemListStart
             \resumeItem{GPA: 3.38}
         \resumeItemListEnd
@@ -181,7 +191,6 @@ Striving to automate and streamline inter-system tasks perceived be isolated and
             \resumeItem{School team project that acted as a demonstration of waterfall and agile scrum work methodologies}
             \resumeItem{Created central waterfall documents, SRS and SDD}
             \resumeItem{Simulated user stories with arbitrary feature requests to be implemented within 72 hours on an existing codebase}
-            \resumeItem{Leveraged several OOP patterns(e.g. builder, observer) to follow SOLID principles, and enable adaptability/modularity}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
@@ -195,7 +204,6 @@ Striving to automate and streamline inter-system tasks perceived be isolated and
      \textbf{Languages:}{ Python, C, C++, Rust, MySQL, Node.js, JavaScript, HTML, CSS} \\
      \textbf{Technologies:}{ AWS, Openshift, Terraform, Chef, Ansible} \\
      \textbf{Certifications:}{ Backend Development and API -- FreeCodeCamp} \\
-     \textbf{Developer Tools:}{ Git, Ansible } \\
     }}
  \end{itemize}
 
