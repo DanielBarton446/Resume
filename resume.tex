@@ -127,10 +127,14 @@ Maintainability and extensibility are often sacrificed to yield quick results. I
       {Support Engineer -- Metadata Frameworks}{ November 2023 -- Present}
       {Susquehanna International Group}{ Bala Cynwyd, Pennsylvania}
     \resumeItemListStart
-      \resumeItem{ Lead a major migration task for on-prem infrastructure for minimized impacts on trading operations for the Firm}
-      \resumeItem{ Improved several manual operational tasks with automation where allowed, and through data representation otherwise. One particular case cut down a low priority daily task from hours to minutes. }
-      \resumeItem{ Implemented automatic token bundling for application deployment with our in-house deployment tooling}
-      \resumeItem{ Implemented multiple python-based monitoring additions. One gap was alerting on silently failing ELK watchers}
+      \resumeItem{ Provided Level 1 support for critical trading infrastructure. Triaging and handling the majority of alerts}
+      \resumeItem{ Lead major OS re-imaging for physical hosts for modernization and access to key new system features}
+      \resumeItem{ Spearheaded the migration to systemd from cron for many operational advantages provided by systemd}
+      \resumeItem{ Identified performance bottlenecks between application, kernel, host hardware, and network hardware}
+      \resumeItem{ Restructured networking structure to add physical site redundancy for applications which did not previously exist, while minimizing connectivity complexity}
+      \resumeItem{ Automated several manual processes which cut down operational overhead from hours of daily work to minutes}
+      \resumeItem{ Implemented multiple Python-based monitoring additions. One gap was alerting on silently failing ELK watchers}
+      \resumeItem{ Enhanced the home-brewed infrastructure management mechanism, improving operations and visibility}
     \resumeItemListEnd
 
     \resumeSubheading
@@ -141,7 +145,8 @@ Maintainability and extensibility are often sacrificed to yield quick results. I
         \resumeItem{Frequently worked with Terraform, Chef, and Ansible to provision and configure AWS infrastructure}
         \resumeItem{Automated snapshot cleanup for Grafana, alongside building an improved restoration mechanism for dashboards}
         \resumeItem{Lead the migration task for authentication from crowd auth over to AD through SAML for Splunk}
-        \resumeItem{Implemented automation for Splunk index creation. This enabled app teams to not be reliant on the regular 2-week deployment cycle where they would need to create a ticket to be added to the queue of new indexes}
+        \resumeItem{Implemented automation for Splunk index creation. This enabled app teams to not be reliant on the regular 2-week deployment cycle where they would need to engage a manual ticketing mechanism.}
+        \resumeItem{Simplified the process for log index restoration from S3 to Splunk, reducing a manual task taking weeks to hours.}
         \resumeItem{Re-architect log file backup mechanism (for resiliency) for tens of thousands of dollars in yearly cost savings}
       \resumeItemListEnd
 
@@ -156,18 +161,6 @@ Maintainability and extensibility are often sacrificed to yield quick results. I
      
     \resumeSubHeadingListEnd
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Minnesota}{ Minneapolis, Minnesota}
-      {Bachelor of Computer Science}{ May 2022}
-          \resumeItemListStart
-            \resumeItem{GPA: 3.38}
-        \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-
 %-----------PROJECTS-----------
 \section{Projects}
 
@@ -180,20 +173,23 @@ Maintainability and extensibility are often sacrificed to yield quick results. I
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{[C] Basic Chatroom} $|$ \emph{Pthread}}{April 2021}
-          \resumeItemListStart
-            \resumeItem{Local server-client relationship from scratch allowing for chatting utilizing FIFO’s. Extendable to sockets and over-the-network chatting. Utilized elementary multi-threading, and taught elementary concepts of networking.}
-          \resumeItemListEnd
-          
-      \resumeProjectHeading
           {\textbf{[C++] Voting System Simluation} $|$ \emph{doxygen}}{April 2022}
           \resumeItemListStart
             \resumeItem{School team project that acted as a demonstration of waterfall and agile scrum work methodologies}
             \resumeItem{Created central waterfall documents, SRS and SDD}
             \resumeItem{Simulated user stories with arbitrary feature requests to be implemented within 72 hours on an existing codebase}
-          \resumeItemListEnd
+          \resumeItemListEnd         
 
     \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Minnesota}{ Minneapolis, Minnesota}
+      {Bachelor of Computer Science}{ May 2022}
+
+  \resumeSubHeadingListEnd
 
 
 %
